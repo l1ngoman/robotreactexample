@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 .App {
   text-align: center;
 }
 
 .Robot {
-  background-color: #cccccc;
-  color: white;
+  background-image: url("https://img.freepik.com/free-vector/robots-pattern-design_1131-2.jpg?size=338&ext=jpg");
+  color: #0000ee;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .App-logo {
@@ -42,12 +45,25 @@
 input {
   width: 50%;
   border: 0px;
+  background-color: #bbbbbb;
 }
 #user{
-  border: 1px solid black;
+  background-color: lightblue;
+  color: #0000ee;
 }
 img {
   height:75px;
   width:100px;
   border-radius: 50%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.box{
+  background-color: #bbbbbb;
+  border: 1px solid black;
+  margin-left:25%;
+  margin-right: 25%;
+  width: 50%;
+
 }
