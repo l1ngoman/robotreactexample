@@ -8,7 +8,7 @@ class App extends Component {
     this.state={
       goodText: ' ',
       badText: '',
-      kanyeText: "your 'onye"
+      kanyeText: ''
     }
   }
   render() {
@@ -21,25 +21,31 @@ class App extends Component {
   changeValue = (e)=>{
       this.setState({goodText: e.target.value})
       this.setState({badText: this.badRobotConverter(e)})
-      this.setState({kanyeText: e.target.value})
+      this.setState({kanyeText: this.kanyeBotConverter(e)})
   }
   //return a string the length of e.target.value
   badRobotConverter=(e)=>{
     let string = []
     for(let i=0;i<e.target.value.length;i++){
-      if(i%3==0){
+      if(i%3===0){
         string.push("B")
-      }else if(i%3==1){
+      }else if(i%3===1){
         string.push("L")
       }else{
         string.push("A")
       }
     }
-
     return string.join('');
+  }
+  kanyeBotConverter=(e)=>{
+    let arr = []
+    let kString = 'Imma let you finish, but Beyonce knows that ' + e.target.value;
+    for(let i=0;i<e.target.value.length;i++){
+      arr.push(kString[i])
+    }
+    return arr.join('')
+
   }
 }
 
 export default App;
-
-//add input handler to link fields

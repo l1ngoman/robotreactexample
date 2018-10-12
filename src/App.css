@@ -35,3 +35,10 @@
   font-weight: bold;
   text-decoration: underline;
 }
+input {
+  width: 80%;
+  border: 0px;
+}
+#user{
+  border: 1px solid black;
+}
